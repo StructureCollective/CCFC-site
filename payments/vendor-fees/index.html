@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pay the vendor application or listing fee to offer goods and services to Covenant Connection Fellowship of Churches — secure sandbox checkout.">
+  <meta name="theme-color" content="#1d3767">
+  <title>Pay Vendor Fees | Covenant Connection Fellowship of Churches</title>
+  <link rel="canonical" href="https://ccfchurches.org/payments/vendor-fees/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/images/favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=EB+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/images/ccfc-crest.png" alt="Covenant Connection Fellowship of Churches crest">
+        <span class="brand-text">
+          <span class="full-name">Covenant Connection<br>Fellowship of Churches</span>
+          <span class="sub">A.D. MMXXIV</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/ministries/">Ministries</a>
+        <a href="/registration/">Registration</a>
+        <a href="/payments/" aria-current="page">Pay Fees</a>
+        <a href="/about/">About &amp; Contact</a>
+        <a class="nav-cta" href="/registration/">New Member? Register</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="sandbox-banner">
+    <div class="container">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Sandbox mode — this checkout is a design mockup. No real payment is ever processed and no card information is stored or transmitted.</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="/">Home</a> / <a href="/payments/">Pay Fees</a> / Vendor Fees</div>
+        <span class="eyebrow">Vendor Fees</span>
+        <h1>Pay Vendor Fees</h1>
+        <p>Choose a vendor listing tier below to complete your application fee.</p>
+      </div>
+    </section>
+
+    <section class="section-paper">
+      <div class="container">
+        <div class="payment-layout">
+          <div>
+            <div class="form-card">
+              <h3>Vendor Listing Fee</h3>
+              <p class="muted">Due after submitting the <a href="/registration/#vendor" style="color:var(--maroon);">Vendor Registration</a> form. This is a sandbox — use the test card below, no real card is required.</p>
+
+              <form id="paymentForm" data-payment-type="Vendor Fees">
+                <div class="field full" style="margin-bottom:22px;">
+                  <label>Vendor Listing Tier</label>
+                  <div class="amount-options">
+                    <div class="amount-option">
+                      <input type="radio" name="amount" id="amt-standard" value="75.00" checked>
+                      <label for="amt-standard"><span class="amt">$75.00</span><span class="desc">Standard Vendor Listing</span></label>
+                    </div>
+                    <div class="amount-option">
+                      <input type="radio" name="amount" id="amt-premium" value="150.00">
+                      <label for="amt-premium"><span class="amt">$150.00</span><span class="desc">Premium Vendor Listing</span></label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="field full">
+                    <label for="pay-name">Name on Card</label>
+                    <input id="pay-name" type="text" autocomplete="off" required>
+                  </div>
+                  <div class="field full">
+                    <label for="pay-number">Card Number</label>
+                    <input id="pay-number" type="text" inputmode="numeric" autocomplete="off" placeholder="0000 0000 0000 0000" required>
+                  </div>
+                  <div class="field">
+                    <label for="pay-expiry">Expiration (MM/YY)</label>
+                    <input id="pay-expiry" type="text" inputmode="numeric" autocomplete="off" placeholder="MM/YY" required>
+                  </div>
+                  <div class="field">
+                    <label for="pay-cvc">CVC</label>
+                    <input id="pay-cvc" type="text" inputmode="numeric" autocomplete="off" placeholder="123" required>
+                  </div>
+                  <div class="field full">
+                    <label for="pay-zip">Billing ZIP Code</label>
+                    <input id="pay-zip" type="text" inputmode="numeric" autocomplete="off" placeholder="27262">
+                  </div>
+                </div>
+
+                <div class="amount-total" data-amount-mode="radio">
+                  <span class="label">Total due today</span>
+                  <span class="value">$0.00</span>
+                </div>
+
+                <button type="submit" class="btn btn-pay" disabled>Pay Vendor Fee</button>
+                <p class="secure-lock">🔒 Sandbox checkout — no real payment will be processed</p>
+              </form>
+            </div>
+
+            <div class="payment-success" role="status" tabindex="-1">
+              <div class="check" aria-hidden="true">✓</div>
+              <h3>Payment Successful</h3>
+              <p>Thank you for your <span class="success-type">Vendor Fees</span> payment of <span class="success-amount">$0.00</span>. A receipt has been emailed to you.</p>
+              <p class="receipt-line">This is a sandbox mockup — no email was actually sent and no funds were transferred.</p>
+              <div class="success-actions">
+                <a class="btn btn-outline-dark" href="/payments/">Make Another Payment</a>
+                <a class="btn btn-primary" href="/">Return Home</a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="payment-aside">
+            <div class="card-preview">
+              <div class="card-preview-top">
+                <img class="card-preview-crest" src="/assets/images/ccfc-crest.png" alt="">
+                <div class="card-preview-chip" aria-hidden="true"></div>
+              </div>
+              <div class="card-preview-number">•••• •••• •••• ••••</div>
+              <div class="card-preview-bottom">
+                <span class="card-preview-name">YOUR NAME HERE</span>
+                <span class="card-preview-expiry"><span class="exp-label">Expires</span><span class="exp-val">MM/YY</span></span>
+              </div>
+            </div>
+            <div class="sandbox-note">
+              <span><strong>Sandbox card:</strong> click the card number field, or use the button, to autofill a test card.</span>
+              <button type="button" class="sandbox-fill-btn">Use Sandbox Test Card</button>
+            </div>
+            <p class="sandbox-applied"><span aria-hidden="true">✓</span> Sandbox test card applied — 4242 4242 4242 4242</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="/assets/images/ccfc-crest.png" alt="Covenant Connection Fellowship of Churches">
+            <span class="footer-brand-text">Covenant Connection<br>Fellowship of Churches</span>
+          </div>
+          <p class="footer-tagline">"A Covenant Has Been Made" — A.D. MMXXIV</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/ministries/">Ministries</a></li>
+            <li><a href="/registration/">Registration &amp; Requests</a></li>
+            <li><a href="/payments/">Pay Fees</a></li>
+            <li><a href="/about/">About &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Registration</h4>
+          <ul>
+            <li><a href="/registration/#new-member">New Member</a></li>
+            <li><a href="/registration/#vendor">Vendor Application</a></li>
+            <li><a href="/registration/#prayer">Prayer Request</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@ccfchurches.org">info@ccfchurches.org</a></li>
+            <li><a href="tel:+13365550100">(336) 555-0100</a></li>
+            <li>High Point, NC</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Covenant Connection Fellowship of Churches. All rights reserved.</span>
+        <a class="built-by" href="https://structurecollective.com" target="_blank" rel="noopener">
+          <img src="/assets/images/structure-collective-icon.png" alt="" width="16" height="16">
+          Built by Structure Collective
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
