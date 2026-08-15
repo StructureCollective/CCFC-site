@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register as a new member, submit a vendor application, or send a prayer request to Covenant Connection Fellowship of Churches leadership.">
+  <meta name="theme-color" content="#1d3767">
+  <title>Registration &amp; Requests | Covenant Connection Fellowship of Churches</title>
+  <link rel="canonical" href="https://ccfchurches.org/registration/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/images/favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=EB+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Covenant Connection Fellowship of Churches">
+  <meta property="og:title" content="Registration & Requests | Covenant Connection Fellowship of Churches">
+  <meta property="og:description" content="Register as a new member, submit a vendor application, or send a prayer request to fellowship leadership.">
+  <meta property="og:url" content="https://ccfchurches.org/registration/">
+  <meta property="og:image" content="https://ccfchurches.org/assets/images/ccfc-crest.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Registration & Requests | Covenant Connection Fellowship of Churches">
+  <meta name="twitter:description" content="Register as a new member, submit a vendor application, or send a prayer request to fellowship leadership.">
+  <meta name="twitter:image" content="https://ccfchurches.org/assets/images/ccfc-crest.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/images/ccfc-crest.png" alt="Covenant Connection Fellowship of Churches crest">
+        <span class="brand-text">
+          <span class="full-name">Covenant Connection<br>Fellowship of Churches</span>
+          <span class="sub">A.D. MMXXIV</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/ministries/">Ministries</a>
+        <a href="/registration/" aria-current="page">Registration</a>
+        <a href="/about/">About &amp; Contact</a>
+        <a class="nav-cta" href="/registration/">New Member? Register</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="/">Home</a> / Registration &amp; Requests</div>
+        <span class="eyebrow">Registration &amp; Requests</span>
+        <h1>New Member, Vendor &amp; Prayer Request Forms</h1>
+        <p>Standardized forms keep CCFC's records consistent across every sister church. Choose a form below to get started.</p>
+      </div>
+    </section>
+
+    <section class="section-paper">
+      <div class="container">
+        <div class="form-tabs" role="tablist" aria-label="Registration forms">
+          <button class="form-tab" role="tab" data-target="new-member" aria-selected="true">New Member Registration</button>
+          <button class="form-tab" role="tab" data-target="vendor" aria-selected="false">Vendor Registration</button>
+          <button class="form-tab" role="tab" data-target="prayer" aria-selected="false">Prayer Request</button>
+        </div>
+
+        <!-- New Member -->
+        <div class="form-panel active" id="new-member">
+          <div class="form-card">
+            <h3>New Member Registration</h3>
+            <p class="muted">Joining a sister church in the fellowship? Fill out the form below and it will be routed to your local church administrator.</p>
+            <form data-mock-form aria-describedby="new-member-disclaimer">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="nm-first">First Name</label>
+                  <input id="nm-first" type="text" required>
+                </div>
+                <div class="field">
+                  <label for="nm-last">Last Name</label>
+                  <input id="nm-last" type="text" required>
+                </div>
+                <div class="field">
+                  <label for="nm-email">Email Address</label>
+                  <input id="nm-email" type="email" required>
+                </div>
+                <div class="field">
+                  <label for="nm-phone">Phone Number</label>
+                  <input id="nm-phone" type="tel">
+                </div>
+                <div class="field full">
+                  <label for="nm-church">Sister Church</label>
+                  <select id="nm-church">
+                    <option>New Covenant Worship Center — High Point, NC</option>
+                    <option>[Sister Church Name]</option>
+                    <option>[Sister Church Name]</option>
+                    <option>Not sure — please contact me</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="nm-notes">Additional Notes (optional)</label>
+                  <textarea id="nm-notes" placeholder="Anything you'd like the church administrator to know."></textarea>
+                </div>
+              </div>
+              <div class="form-footer">
+                <p class="form-disclaimer" id="new-member-disclaimer">By submitting, your information is sent to the appropriate church administrator and stored in CCFC's member records.</p>
+                <button type="submit" class="btn btn-primary">Submit Registration</button>
+              </div>
+            </form>
+            <div class="form-success" role="status">
+              <span aria-hidden="true">✓</span>
+              <span>Thank you — this is a design mockup, so your form wasn't actually submitted. In the live site, this would be sent to your church administrator.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vendor -->
+        <div class="form-panel" id="vendor">
+          <div class="form-card">
+            <h3>Vendor Registration</h3>
+            <p class="muted">Interested in providing goods or services to CCFC or a sister church? Submit your information below.</p>
+            <form data-mock-form aria-describedby="vendor-disclaimer">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="v-business">Business Name</label>
+                  <input id="v-business" type="text" required>
+                </div>
+                <div class="field">
+                  <label for="v-contact">Contact Name</label>
+                  <input id="v-contact" type="text" required>
+                </div>
+                <div class="field">
+                  <label for="v-email">Email Address</label>
+                  <input id="v-email" type="email" required>
+                </div>
+                <div class="field">
+                  <label for="v-phone">Phone Number</label>
+                  <input id="v-phone" type="tel">
+                </div>
+                <div class="field full">
+                  <label for="v-service">Type of Goods / Services</label>
+                  <input id="v-service" type="text" placeholder="e.g. catering, printing, facilities">
+                </div>
+                <div class="field full">
+                  <label for="v-notes">Additional Details (optional)</label>
+                  <textarea id="v-notes" placeholder="Tell us more about what you offer."></textarea>
+                </div>
+              </div>
+              <div class="form-footer">
+                <p class="form-disclaimer" id="vendor-disclaimer">By submitting, your information is sent to CCFC's administrative team and stored in the fellowship's vendor records.</p>
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+              </div>
+            </form>
+            <div class="form-success" role="status">
+              <span aria-hidden="true">✓</span>
+              <span>Thank you — this is a design mockup, so your form wasn't actually submitted. In the live site, this would be sent to CCFC's administrative team.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prayer Request -->
+        <div class="form-panel" id="prayer">
+          <div class="form-card">
+            <h3>Prayer Request</h3>
+            <p class="muted">Share a prayer request with fellowship ministers. Requests are routed privately and are not publicly posted.</p>
+            <form data-mock-form aria-describedby="prayer-disclaimer">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="pr-name">Full Name</label>
+                  <input id="pr-name" type="text" required>
+                </div>
+                <div class="field">
+                  <label for="pr-email">Email Address</label>
+                  <input id="pr-email" type="email" required>
+                </div>
+                <div class="field full">
+                  <label for="pr-church">Sister Church (optional)</label>
+                  <input id="pr-church" type="text" placeholder="[Sister Church Name]">
+                </div>
+                <div class="field full">
+                  <label for="pr-request">Prayer Request</label>
+                  <textarea id="pr-request" required placeholder="Share as much or as little as you'd like."></textarea>
+                </div>
+                <div class="field full">
+                  <label style="display:flex; align-items:center; gap:10px; font-weight:500;">
+                    <input type="checkbox" style="width:auto;"> Keep this request confidential to fellowship ministers only
+                  </label>
+                </div>
+              </div>
+              <div class="form-footer">
+                <p class="form-disclaimer" id="prayer-disclaimer">Requests are routed directly to the appropriate ministers and access is restricted to authorized personnel.</p>
+                <button type="submit" class="btn btn-primary">Send Prayer Request</button>
+              </div>
+            </form>
+            <div class="form-success" role="status">
+              <span aria-hidden="true">✓</span>
+              <span>Thank you — this is a design mockup, so your request wasn't actually submitted. In the live site, this would be routed to fellowship ministers.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="/assets/images/ccfc-crest.png" alt="Covenant Connection Fellowship of Churches">
+            <span class="footer-brand-text">Covenant Connection<br>Fellowship of Churches</span>
+          </div>
+          <p class="footer-tagline">"A Covenant Has Been Made" — A.D. MMXXIV</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/ministries/">Ministries</a></li>
+            <li><a href="/registration/">Registration &amp; Requests</a></li>
+            <li><a href="/about/">About &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Registration</h4>
+          <ul>
+            <li><a href="/registration/#new-member">New Member</a></li>
+            <li><a href="/registration/#vendor">Vendor Application</a></li>
+            <li><a href="/registration/#prayer">Prayer Request</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@ccfchurches.org">info@ccfchurches.org</a></li>
+            <li><a href="tel:+13365550100">(336) 555-0100</a></li>
+            <li>High Point, NC</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> Covenant Connection Fellowship of Churches. All rights reserved.</span>
+        <a class="built-by" href="https://structurecollective.com" target="_blank" rel="noopener">
+          <img src="/assets/images/structure-collective-icon.png" alt="" width="16" height="16">
+          Built by Structure Collective
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
